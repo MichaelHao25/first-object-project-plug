@@ -1,0 +1,107 @@
+/*重写浏览器的所有默认样式*/
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, code, form, input, textarea, p, th, td{margin:0;padding:0;}
+
+table{border-collapse:collapse;border-spacing:0;}
+
+i, em, strong{font-style:normal;font-weight:normal;}
+
+li{list-style:none;vertical-align:top;}
+
+table{border-collapse:collapse;}
+
+textarea{resize:none;overflow:auto;}
+
+h1, h2, h3, h4, h5, h6{font-size:100%;font-weight:normal;line-height:inherit;font-size:inherit;color:inherit;}
+
+input, button, textarea, select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+
+textarea{resize:none;overflow:auto;}
+
+a{text-decoration:none;outline:none;font-size:inherit;line-height:inherit;color:inherit;}
+
+img{border:none;vertical-align:top;}/* 基本属性
+---------------------------------------------------------------------------------------------------------------------- */
+
+body{background:#fff;color:#636363;font-family:'microsoft yahei',Arial;}/*.f12_sa, .f12_sa a:link, .f12_sa a:visited{ font-size:12px;}*//* 颜色属性*//*.red, a.red:link, a.red:visited{ color:#c00;}a.red:hover{color:#f00;}
+
+.pa_t_20{ padding-top:20px;}
+.pa_t_25{ padding-top:25px;}*/
+
+.poa{position:absolute;}
+
+.pof{position:fixed;}
+
+.por{position:relative;}
+
+.fb{font-weight:bold;}
+
+.auto{margin:0 auto;}
+
+.fl{float:left;}
+
+.fr{float:right;}
+
+.transition{transition:all 0.6s;}
+
+.clear{zoom:1;}
+
+.clear:after{content:'';display:block;clear:both;}
+
+input[type="checkbox"]{display:none;}
+
+label input[type="checkbox"] + span{display:inline-block;width:16px;height:16px;margin:-4px 6px 0 0;vertical-align:middle;background:url(../img/index_tick.png) left center no-repeat;cursor:pointer;}
+
+label input[type="checkbox"]:checked + span{background:url(../img/index_tick.png) right top no-repeat;}
+
+::-webkit-input-placeholder{/* WebKit browsers */color:#776547;font-family:simsun;}
+
+:-moz-placeholder{/* Mozilla Firefox 4 to 18 */color:#776547;font-family:simsun;}
+
+::-moz-placeholder{/* Mozilla Firefox 19+ */color:#776547;font-family:simsun;}
+
+:-ms-input-placeholder{/* Internet Explorer 10+ */color:#776547;font-family:simsun;}
+
+.cl-case-banner{height:674px;position:relative;overflow: hidden;}
+.cl-case-banner li{position:absolute;left:0;top:0;right:0;height:674px;opacity:0;}
+.cl-case-banner li a{position:absolute;right:0;bottom:0;left:0;top:0;}
+.cl-case-banner .control-btn{position:absolute;left:0;right:0;width:100%;bottom:25px;text-align:center;z-index:2;}
+.cl-case-banner .control-btn span{display:inline-block;margin:0 5px;width:16px;height:16px;background:#a8a8a8;border:1px solid #a8a8a8;-webkit-transition:0.6s;transition:0.6s;border-radius:50%;}
+.cl-case-banner .control-btn span.active, .cl-case-banner .control-btn span:hover{background:none;}
+.cl-case-banner .left-btn{
+	z-index: 1;
+	position: absolute;
+	margin-top: -10px;
+	left: 0;
+	top: 50%;
+	width: 20px;
+	height: 20px;
+	border-right: 1px solid #000;
+	border-top: 1px solid #000;
+	-webkit-transform: rotateZ(-135deg);
+	transform: rotateZ(-135deg);
+	cursor: pointer;
+	opacity: 0;
+	-webkit-transition:0.6s;
+	transition: 0.6s;
+}
+.cl-case-banner .right-btn{
+	z-index: 1;
+	position: absolute;
+	margin-top: -10px;
+	right: 0;
+	top: 50%;
+	width: 20px;
+	height: 20px;
+	border-right: 1px solid #000;
+	border-top: 1px solid #000;
+	-webkit-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+	cursor: pointer;
+	opacity: 0;
+	-webkit-transition:0.6s;
+	transition: 0.6s;
+
+}
+.cl-case-banner:hover .right-btn{right: 10%;opacity: 1;}
+.cl-case-banner:hover .left-btn{left: 10%;opacity: 1;}
