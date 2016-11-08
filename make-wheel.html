@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		
+		(function(){
+			if ((/Android|iPhone|SymbianOS|Windows Phone|iPad|iPod"/).test(navigator.userAgent)) {
+				document.deviceClickEvent = 'touchsrart';
+			}else{
+				document.deviceClickEvent = 'click';
+			}
+			console.log(navigator.userAgent);
+			console.log(document.deviceClickEvent);
+		}());
+
+		//判断设备类型
+	</script>
+	<link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+	<div class="cl-case-banner">
+		<ul>
+			<li style="background:url(img/1.jpg) center top/100% auto no-repeat;"><a href="#"></a></li>
+			<li style="background:url(img/2.jpg) center top/100% auto no-repeat;"><a href="#"></a></li>
+			<li style="background:url(img/3.jpg) center top/100% auto no-repeat;"><a href="#"></a></li>
+		</ul>
+		<div class="control-btn">
+		</div>
+		<div class="left-btn"></div>
+		<div class="right-btn"></div>
+	</div>
+
+
+	<div class="scroll-banner">
+		<ul>
+			<li></li>
+		</ul>
+		<div class="control-btn"></div>
+	</div>
+	<script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+	<script src="js/js.js"></script>
+	<script>
+		fade('.cl-case-banner');
+	</script>
+</body>
+</html>
